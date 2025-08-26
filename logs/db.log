@@ -1,0 +1,224 @@
+[DB] 2025-08-29T09:06:21.529Z [node] GET /projects uid=1
+
+    SELECT
+      p.*,
+      pm.role AS member_role,
+      pm.status AS member_status,
+      (
+        SELECT CAST(COUNT(*) AS UNSIGNED)
+        FROM project_members
+        WHERE project_id = p.id AND status = 'active'
+      ) AS members_count
+    FROM project_members pm
+    JOIN projects p ON p.id = pm.project_id
+    WHERE pm.user_id = ? AND pm.status = 'active'
+    ORDER BY p.created_at DESC
+     :: [1] (3ms)
+[DB] 2025-08-29T09:06:39.588Z [node] GET /projects uid=1
+
+    SELECT
+      p.*,
+      pm.role AS member_role,
+      pm.status AS member_status,
+      (
+        SELECT CAST(COUNT(*) AS UNSIGNED)
+        FROM project_members
+        WHERE project_id = p.id AND status = 'active'
+      ) AS members_count
+    FROM project_members pm
+    JOIN projects p ON p.id = pm.project_id
+    WHERE pm.user_id = ? AND pm.status = 'active'
+    ORDER BY p.created_at DESC
+     :: [1] (24ms)
+[DB] 2025-08-29T09:07:46.646Z [node] GET /projects uid=1
+
+    SELECT
+      p.*,
+      pm.role AS member_role,
+      pm.status AS member_status,
+      (
+        SELECT CAST(COUNT(*) AS UNSIGNED)
+        FROM project_members
+        WHERE project_id = p.id AND status = 'active'
+      ) AS members_count
+    FROM project_members pm
+    JOIN projects p ON p.id = pm.project_id
+    WHERE pm.user_id = ? AND pm.status = 'active'
+    ORDER BY p.created_at DESC
+     :: [1] (5ms)
+[DB] 2025-08-29T09:08:09.532Z [node] GET /projects uid=1
+
+    SELECT
+      p.*,
+      pm.role AS member_role,
+      pm.status AS member_status,
+      (
+        SELECT CAST(COUNT(*) AS UNSIGNED)
+        FROM project_members
+        WHERE project_id = p.id AND status = 'active'
+      ) AS members_count
+    FROM project_members pm
+    JOIN projects p ON p.id = pm.project_id
+    WHERE pm.user_id = ? AND pm.status = 'active'
+    ORDER BY p.created_at DESC
+     :: [1] (4ms)
+[DB] 2025-08-29T09:08:35.135Z [node] GET /projects uid=1
+
+    SELECT
+      p.*,
+      pm.role AS member_role,
+      pm.status AS member_status,
+      (
+        SELECT CAST(COUNT(*) AS UNSIGNED)
+        FROM project_members
+        WHERE project_id = p.id AND status = 'active'
+      ) AS members_count
+    FROM project_members pm
+    JOIN projects p ON p.id = pm.project_id
+    WHERE pm.user_id = ? AND pm.status = 'active'
+    ORDER BY p.created_at DESC
+     :: [1] (3ms)
+[DB] 2025-08-29T09:08:45.949Z [node] GET /projects uid=1
+
+    SELECT
+      p.*,
+      pm.role AS member_role,
+      pm.status AS member_status,
+      (
+        SELECT CAST(COUNT(*) AS UNSIGNED)
+        FROM project_members
+        WHERE project_id = p.id AND status = 'active'
+      ) AS members_count
+    FROM project_members pm
+    JOIN projects p ON p.id = pm.project_id
+    WHERE pm.user_id = ? AND pm.status = 'active'
+    ORDER BY p.created_at DESC
+     :: [1] (17ms)
+[DB] 2025-08-29T09:10:37.154Z [node] GET /projects uid=1
+
+    SELECT
+      p.*,
+      pm.role AS member_role,
+      pm.status AS member_status,
+      (
+        SELECT CAST(COUNT(*) AS UNSIGNED)
+        FROM project_members
+        WHERE project_id = p.id AND status = 'active'
+      ) AS members_count
+    FROM project_members pm
+    JOIN projects p ON p.id = pm.project_id
+    WHERE pm.user_id = ? AND pm.status = 'active'
+    ORDER BY p.created_at DESC
+     :: [1] (24ms)
+[DB] 2025-08-29T09:10:47.120Z [node] GET /projects uid=1
+
+    SELECT
+      p.*,
+      pm.role AS member_role,
+      pm.status AS member_status,
+      (
+        SELECT CAST(COUNT(*) AS UNSIGNED)
+        FROM project_members
+        WHERE project_id = p.id AND status = 'active'
+      ) AS members_count
+    FROM project_members pm
+    JOIN projects p ON p.id = pm.project_id
+    WHERE pm.user_id = ? AND pm.status = 'active'
+    ORDER BY p.created_at DESC
+     :: [1] (5ms)
+[DB] 2025-08-29T09:12:59.619Z [node] GET /projects uid=1
+
+    SELECT
+      p.*,
+      pm.role AS member_role,
+      pm.status AS member_status,
+      (
+        SELECT CAST(COUNT(*) AS UNSIGNED)
+        FROM project_members
+        WHERE project_id = p.id AND status = 'active'
+      ) AS members_count
+    FROM project_members pm
+    JOIN projects p ON p.id = pm.project_id
+    WHERE pm.user_id = ? AND pm.status = 'active'
+    ORDER BY p.created_at DESC
+     :: [1] (4ms)
+[DB] 2025-08-29T09:13:02.090Z [node] GET /projects uid=1
+
+    SELECT
+      p.*,
+      pm.role AS member_role,
+      pm.status AS member_status,
+      (
+        SELECT CAST(COUNT(*) AS UNSIGNED)
+        FROM project_members
+        WHERE project_id = p.id AND status = 'active'
+      ) AS members_count
+    FROM project_members pm
+    JOIN projects p ON p.id = pm.project_id
+    WHERE pm.user_id = ? AND pm.status = 'active'
+    ORDER BY p.created_at DESC
+     :: [1] (19ms)
+[DB] 2025-08-29T09:13:03.232Z [node] GET /projects uid=1
+
+    SELECT
+      p.*,
+      pm.role AS member_role,
+      pm.status AS member_status,
+      (
+        SELECT CAST(COUNT(*) AS UNSIGNED)
+        FROM project_members
+        WHERE project_id = p.id AND status = 'active'
+      ) AS members_count
+    FROM project_members pm
+    JOIN projects p ON p.id = pm.project_id
+    WHERE pm.user_id = ? AND pm.status = 'active'
+    ORDER BY p.created_at DESC
+     :: [1] (19ms)
+[DB] 2025-08-29T09:13:14.741Z [node] POST /api/auth/callback/credentials
+
+    SELECT
+      u.id,
+      u.email,
+      u.name,
+      u.password_hash,
+      u.token_version,
+      GROUP_CONCAT(DISTINCT r.slug) AS roles_csv
+    FROM users u
+    LEFT JOIN user_roles ur ON ur.user_id = u.id
+    LEFT JOIN roles r ON r.id = ur.role_id
+    WHERE u.email = ?
+    GROUP BY u.id, u.email, u.name, u.password_hash, u.token_version
+    LIMIT 1
+     :: [local@issuehub.dev] (9ms)
+[DB] 2025-08-29T09:14:38.308Z [node] GET /projects uid=1
+
+    SELECT
+      p.*,
+      pm.role AS member_role,
+      pm.status AS member_status,
+      (
+        SELECT CAST(COUNT(*) AS UNSIGNED)
+        FROM project_members
+        WHERE project_id = p.id AND status = 'active'
+      ) AS members_count
+    FROM project_members pm
+    JOIN projects p ON p.id = pm.project_id
+    WHERE pm.user_id = ? AND pm.status = 'active'
+    ORDER BY p.created_at DESC
+     :: [1] (203ms)
+[DB] 2025-08-29T09:14:39.727Z [node] GET /projects uid=1
+
+    SELECT
+      p.*,
+      pm.role AS member_role,
+      pm.status AS member_status,
+      (
+        SELECT CAST(COUNT(*) AS UNSIGNED)
+        FROM project_members
+        WHERE project_id = p.id AND status = 'active'
+      ) AS members_count
+    FROM project_members pm
+    JOIN projects p ON p.id = pm.project_id
+    WHERE pm.user_id = ? AND pm.status = 'active'
+    ORDER BY p.created_at DESC
+     :: [1] (20ms)
